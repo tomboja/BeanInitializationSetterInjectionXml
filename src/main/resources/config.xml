@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="edu.miu.cs544.temesgen.service.Game" id="game">
+        <property name="vehicle" ref="bike">
+        </property>
+    </bean>
+    
+    <bean class="edu.miu.cs544.temesgen.service.Bike" id="bike">
+        <property name="brand" value="BMX">
+        </property>
+        <property name="tireSize" value="16">
+        </property>
+    </bean>
+
+    <bean class="edu.miu.cs544.temesgen.service.Car" id="car">
+    </bean>
+</beans>
